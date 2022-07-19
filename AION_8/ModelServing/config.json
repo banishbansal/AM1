@@ -1,0 +1,7 @@
+{
+    "problem_type": "classification",
+    "modelVersion": "1",
+    "targetPath": "AION_8",
+    "ipAddress": "127.0.0.1",
+    "portNo": "8094"
+}

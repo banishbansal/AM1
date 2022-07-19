@@ -1,0 +1,72 @@
+{
+    "problem_type": "classification",
+    "modelVersion": "1",
+    "target_feature": "class",
+    "bin_features": [],
+    "num_fill_method": "median",
+    "cat_fill_method": "mode",
+    "n_bins": 5,
+    "normalization_method": null,
+    "outlier_detection": null,
+    "train_features": [
+        "checking_status",
+        "duration",
+        "credit_history",
+        "purpose",
+        "credit_amount",
+        "savings_status",
+        "employment",
+        "installment_commitment",
+        "personal_status",
+        "other_parties",
+        "residence_since",
+        "property_magnitude",
+        "age",
+        "other_payment_plans",
+        "housing",
+        "existing_credits",
+        "job",
+        "num_dependents",
+        "own_telephone",
+        "foreign_worker"
+    ],
+    "num_features": [
+        "duration",
+        "credit_amount",
+        "age"
+    ],
+    "cat_num_features": [
+        "installment_commitment",
+        "num_dependents",
+        "residence_since",
+        "credit_amount",
+        "age",
+        "existing_credits",
+        "duration"
+    ],
+    "cat_features": [
+        "checking_status",
+        "credit_history",
+        "purpose",
+        "savings_status",
+        "employment",
+        "personal_status",
+        "other_parties",
+        "property_magnitude",
+        "other_payment_plans",
+        "housing",
+        "job",
+        "own_telephone",
+        "foreign_worker",
+        "class"
+    ],
+    "text_features": [],
+    "word2num_features": [
+        "checking_status",
+        "credit_history",
+        "savings_status",
+        "employment",
+        "personal_status"
+    ],
+    "targetPath": "AION_8"
+}

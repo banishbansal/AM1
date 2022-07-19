@@ -1,0 +1,9 @@
+{
+    "problem_type": "classification",
+    "modelVersion": "1",
+    "targetPath": "AION_8",
+    "models": [
+        "KNeighborsClassifier_MLBased",
+        "XGBClassifier_MLBased"
+    ]
+}

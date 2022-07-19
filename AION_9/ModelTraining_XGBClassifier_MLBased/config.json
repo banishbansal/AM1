@@ -1,0 +1,141 @@
+{
+    "problem_type": "classification",
+    "modelVersion": "1",
+    "target_feature": "class",
+    "train_ratio": 0.8,
+    "optimization_param": {
+        "iterations": 100,
+        "trainTestCVSplit": 5,
+        "geneticparams": {
+            "n_population": 50,
+            "crossover_proba": 0.5,
+            "mutation_proba": 0.2,
+            "crossover_independent_proba": 0.5,
+            "mutation_independent_proba": 0.05,
+            "tournament_size": 3,
+            "n_gen_no_change": 10
+        }
+    },
+    "train_features": [
+        "checking_status",
+        "duration",
+        "credit_history",
+        "purpose",
+        "credit_amount",
+        "savings_status",
+        "employment",
+        "installment_commitment",
+        "personal_status",
+        "other_parties",
+        "residence_since",
+        "property_magnitude",
+        "age",
+        "other_payment_plans",
+        "housing",
+        "existing_credits",
+        "job",
+        "num_dependents",
+        "own_telephone",
+        "foreign_worker"
+    ],
+    "scoring_criteria": "accuracy",
+    "algorithms": {
+        "XGBClassifier": {
+            "tree_method": [
+                "hist"
+            ],
+            "n_estimators": [
+                40,
+                45,
+                50,
+                55,
+                60,
+                65,
+                70,
+                75,
+                80,
+                85,
+                90,
+                95,
+                100,
+                105,
+                110,
+                115,
+                120,
+                125,
+                130,
+                135,
+                140,
+                145
+            ],
+            "max_depth": [
+                4,
+                5,
+                6
+            ],
+            "gamma": [
+                0.25,
+                0.8333333333333334,
+                1.4166666666666667,
+                2.0
+            ],
+            "min_child_weight": [
+                0.01,
+                0.014444444444444444,
+                0.01888888888888889,
+                0.02333333333333333,
+                0.027777777777777776,
+                0.03222222222222222,
+                0.03666666666666667,
+                0.04111111111111111,
+                0.04555555555555556,
+                0.05
+            ],
+            "subsample": [
+                0.8,
+                0.9,
+                1.0
+            ],
+            "colsample_bytree": [
+                0.8,
+                0.9,
+                1.0
+            ],
+            "learning_rate": [
+                0.01,
+                0.0325,
+                0.05500000000000001,
+                0.0775,
+                0.1
+            ],
+            "reg_alpha": [
+                0.01,
+                11.12,
+                22.23,
+                33.339999999999996,
+                44.449999999999996,
+                55.559999999999995,
+                66.67,
+                77.78,
+                88.89,
+                100.0
+            ],
+            "reg_lambda": [
+                0.01,
+                11.12,
+                22.23,
+                33.339999999999996,
+                44.449999999999996,
+                55.559999999999995,
+                66.67,
+                77.78,
+                88.89,
+                100.0
+            ],
+            "random_state": [
+                42
+            ]
+        }
+    },
+    "targetPath": "AION_8"
+}
